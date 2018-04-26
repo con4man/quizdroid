@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="topics">
+        <item>Math</item>
+        <item>Physics</item>
+        <item>Marvel Super Heroes</item>
+    </string-array>
+    <string-array name="topicDescriptions">
+        <item>Mathematics is the study of such topics as quantity, structure, space, and change. There are many views among mathematicians and philosophers as to the exact scope and definition of mathematics.</item>
+        <item>A branch of knowledge or study dealing with a body of facts or truths systematically arranged and showing the operation of general laws.</item>
+        <item>Earths Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle. With a roster that has included Captain America, Iron Man, Ant-Man, Hulk, Thor, Wasp and dozens more over the years, the Avengers have come to be regarded as Earths No. 1 team.</item>
+    </string-array>
+    <string-array name="mathQuestions">
+        <item>What is 2 + 2?</item>
+        <item>What is 2 x 2?</item>
+        <item>What is 2 / 2?</item>
+    </string-array>
+    <string-array name="mathOptions">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="mathAnswers">
+        <item>4</item>
+        <item>4</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="physicsQuestions">
+        <item>What is the acceleration of gravity on Earth?</item>
+        <item>What is the process a plant uses for energy?</item>
+        <item>What is an object that orbits the Earth?</item>
+    </string-array>
+    <string-array name="physicsOptions">
+        <item>9.8m/s^2</item>
+        <item>Fish</item>
+        <item>Photosynthesis</item>
+        <item>The moon</item>
+    </string-array>
+    <string-array name="physicsAnswers">
+        <item>9.8m/s^2</item>
+        <item>Photosynthesis</item>
+        <item>The moon</item>
+    </string-array>
+    <string-array name="marvelQuestions">
+        <item>When was the first Avengers movie released to theaters?</item>
+        <item>Who was not in the first Avengers movie?</item>
+        <item>Who is Thors brother?</item>
+    </string-array>
+    <string-array name="marvelOptions">
+        <item>2011</item>
+        <item>2012</item>
+        <item>Loki</item>
+        <item>Spider-Man</item>
+    </string-array>
+    <string-array name="marvelAnswers">
+        <item>2012</item>
+        <item>Spider-Man</item>
+        <item>Loki</item>
+    </string-array>
+</resources>
