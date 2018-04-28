@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun createTopicListOnClickListeners() {
         listViewTopics.setOnItemClickListener({ _, _, _, id ->
-            val intent = Intent(this, TopicOverviewActivity::class.java).apply {
+            val intent = Intent(this, QuizTopicActivity::class.java).apply {
                 putExtra("selectedTopicId", id.toInt() )
             }
             startActivity(intent)
