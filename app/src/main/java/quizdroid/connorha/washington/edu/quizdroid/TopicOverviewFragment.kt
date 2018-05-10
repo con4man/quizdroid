@@ -19,7 +19,7 @@ class TopicOverviewFragment : Fragment() {
         if (arguments != null) {
             topicId = arguments!!.getInt("topicId")
         }
-        topic = QuizApp.topics[topicId]
+        topic = QuizApp.instance.getTopic(topicId)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -40,7 +40,12 @@ class TopicOverviewFragment : Fragment() {
     private fun setNumberOfQuestions(view: View) {
         val textNumQuestions : TextView = view.findViewById(R.id.textNumQuestions)
         val numQuestions = topic.questions.size
-        val numQuestionsString = "There are $numQuestions questions"
+        var numQuestionsString = ""
+        if (numQuestions == 1) {
+            numQuestionsString = "There is $numQuestions question"
+        } else {
+            numQuestionsString = "There are $numQuestions questions"
+        }
         textNumQuestions.text = numQuestionsString
     }
 

@@ -20,7 +20,7 @@ class QuizTopicActivity : AppCompatActivity() {
     }
 
     private fun setNavBarTitle() {
-        val topicTitle = QuizApp.topics[selectedTopicId].title
+        val topicTitle = QuizApp.instance.getTopic(selectedTopicId).title
         supportActionBar?.title = topicTitle
     }
 

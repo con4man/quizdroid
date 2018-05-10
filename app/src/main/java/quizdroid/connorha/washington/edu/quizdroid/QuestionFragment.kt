@@ -25,7 +25,7 @@ class QuestionFragment : Fragment() {
             score = arguments!!.getInt("score")
             questionIndex = arguments!!.getInt("questionIndex")
         }
-        topic = QuizApp.topics[topicId]
+        topic = QuizApp.instance.getTopic(topicId)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -66,7 +66,7 @@ class QuestionFragment : Fragment() {
         val buttonSubmit : Button = view.findViewById(R.id.buttonSubmit)
         answerOptionsRadioGroup.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { radioGroup, i ->
             buttonSubmit.isEnabled = true
-            val numDifferenceBetweenIdAndIndex = 2131165288
+            val numDifferenceBetweenIdAndIndex = 2131165292
             selectedOptionIndex = i - numDifferenceBetweenIdAndIndex
         })
     }

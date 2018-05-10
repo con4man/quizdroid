@@ -25,7 +25,7 @@ class AnswerFragment : Fragment() {
             score = arguments!!.getInt("score")
             questionIndex = arguments!!.getInt("questionIndex")
         }
-        topic = QuizApp.topics[topicId]
+        topic = QuizApp.instance.getTopic(topicId)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
